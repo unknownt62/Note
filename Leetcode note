@@ -14,4 +14,4 @@ Array:
                  TC: O(n**2) -> 建立hash table O(n) for n times, 存储array O(nlogn) -> O(nlogn + n**2)
                  SC: O(n) for the hashset
                  *如果不sort数列也可以，但为了确保没有duplicate需要对结果进行tuple(sorted((a,b,c))处理
-      118. 帕斯卡三角: 内外双loop num[i] = prev[i-1] + prev[i]
+      118. 帕斯卡三角: 内外双loop num[i] = prev[i-1] + prev[i];
