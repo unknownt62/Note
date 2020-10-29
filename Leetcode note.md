@@ -1,4 +1,4 @@
-# Array: 
+Array: 
       避免duplicate，可以使用set作为结果容器，会自动消除duplicate
       Hash table - switch key and value pair
       two pointer - 大小（前后指针）
