@@ -1,4 +1,5 @@
-Array: 
+# Array: 
+      
       避免duplicate，可以使用set作为结果容器，会自动消除duplicate
       Hash table - switch key and value pair
       two pointer - 大小（前后指针）
@@ -15,4 +16,12 @@ Array:
                  SC: O(n) for the hashset
                  *如果不sort数列也可以，但为了确保没有duplicate需要对结果进行tuple(sorted((a,b,c))处理
       118. 帕斯卡三角: 内外双loop num[i] = prev[i-1] + prev[i];
+
+
+
+# Database
+      * Gap and island 问题， 通过多次分组排序，确定同源组 DB1454
+      * 连续问题： cross join 或者 lag lead
+      * 阶梯理论 （hierarchy）:
+            使用recursive cte， 确定好每次的继承关系和初始例
 
