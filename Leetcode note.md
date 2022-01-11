@@ -71,3 +71,22 @@
 
       * 
 
+# Git命令
+      cd到指定目录
+      * 全局指令如: git config --global user.name "xxx" | user.email "xxx@xxx.com"
+      
+      * mkdir, touch分别为创建文件夹及文件；rm -r, rm为对应删除操作
+      * 检查ssh key: ~/.ssh; 生成ssh key: ssh-keygen -t rsa -C "xxx@xxx.com"
+      * 检查历史commit记录：git log 
+      
+      * 建立远程连接（添加远程仓库，用ssh连接）：1.git init 2.git remote add origin git@github.com:xxx.git
+      * 检查本地仓库连接：git remote -v
+            * 下拉代码：(如果是有权限的仓库) git pull origin master (origin为自己给远程仓库的命名，master为远程仓库分支名) 
+                  (如果是无权限的仓库) (非更新) git clone xxx.git
+                  
+               **另：git pull = git merge + git merge （拉数据，不修改本地commit和文件 + 改变本地数据）
+                  
+            * 上传代码：1.git add -A 提交所有变化, git add . 提交新文件和被修改文件，不包括删除文件， git add xxx/*.xxx
+                       2.git commit -m "xxx" 暂存区文件保存到仓库历史记录，添加注释
+                       3.git push -u 本地仓库名 分支 (git push -u origin master)
+            
